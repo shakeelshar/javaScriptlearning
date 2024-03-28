@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cntn{
+            color: brown;
+            font-size: 20px;
+        }
+        .shar{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>I want create another class in css file then  append this file in p tage of  html from the js over write the 1st class </h1>
+
+    <p class="cntn">Hello dear shakeel how  are you </p>
+    
+    <script >
+ let btn=document.createElement("button");
+
+btn.innerText="Click me!";
+btn.style.color="Red";
+btn.style.backgroundColor="black";
+
+document.querySelector("body").append(btn);
+//
+
+
+var para=document.querySelector("p");
+ para.setAttribute("class","shar");
+ para.classList.remove("cntn");
+ para.classList.add("shar");
+    </script>
+</body>
